@@ -1,0 +1,65 @@
+h1 {
+    text-align: center;
+    margin-top: 15px;
+}
+
+form {
+    text-align: center;
+}
+
+input {
+    width: 500px;
+    border-radius: 20px;
+    height: 25px;
+    margin-bottom: 15px;
+}
+
+.save {
+    border-radius: 20px;
+    height: 30px;
+    width: 75px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.tabla {
+    margin: 40em;
+    border: 1px solid #000000;
+    font-weight: bold;
+}
+
+td,
+th {
+    padding: 10px;
+    border: 1px solid #000000;
+}
+
+.edit {
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.delete {
+    margin-right: 10px;
+    background-color: lightcoral;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+th {
+    background-color: lightgreen;
+}
+.textedit{
+    width: 500px;
+    border-radius: 20px;
+    height: 25px;
+}
+.textsaveedit{
+    border-radius: 20px;
+    height: 30px;
+    width: 75px;
+    margin-left: 15px;
+    font-weight: bold;
+}

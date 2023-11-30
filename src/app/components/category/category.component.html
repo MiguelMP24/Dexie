@@ -1,0 +1,48 @@
+<div>
+    <h1>Categorias</h1>
+</div>
+
+<!-- Formulario para añadir -->
+<div>
+    <form [formGroup]="Formulario" (ngSubmit)="addSave()">
+        <input formControlName="name" type="text">
+        <button class="save" type="submit" [disabled]="Formulario.invalid">Guardar</button>
+    </form>
+    <div *ngIf="editingCategoryId">
+        <form [formGroup]="EditForm">
+            <input class="textedit" formControlName="name" type="text">
+            <button class="textsaveedit" (click)="editSave()" type="button">Editar</button>
+        </form>
+    </div>
+</div>
+
+<!-- Lista de categorías -->
+<!-- <div>
+    <ul>
+        <li *ngFor="let item of Data">
+            <span>{{item.name}}</span>
+            <button (click)="editCategory(item)">Editar</button>
+            <button class="delete" (click)="deleteCategory(item.id)">Eliminar</button>
+        </li>
+    </ul>
+</div> -->
+
+<table  class="tabla" style="text-align: center; margin-top: 50px">
+    <thead>
+        <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Opciones</th>
+        </tr>
+    </thead>
+    <tbody style="align-items: center;">
+        <tr *ngFor="let item of Data">
+            <td>{{item.name}}</td>
+            <td>
+                <button class="edit" (click)="editCategory(item)">Editar</button>
+                <button class="delete" (click)="deleteCategory(item.id)">Eliminar</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- Formulario separado para editar -->
